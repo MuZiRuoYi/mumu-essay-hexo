@@ -2,6 +2,7 @@
 title: 前端杂项笔记 - setTimeout
 date: 2018-08-12 12:33:12
 tags: [Frontend]
+category: 'code'
 ---
 
 “怎么在我的界面里不停调用你的接口？”。

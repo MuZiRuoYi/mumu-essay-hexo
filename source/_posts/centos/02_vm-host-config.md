@@ -2,7 +2,7 @@
 title: CentOS（2） — 宿主机所在局域网访问虚拟机端口/服务
 date: 2019-04-18 13:15:21
 tags: [Linux, CentOS, VMware]
-category: 'linux'
+category: 'CentOS'
 ---
 
 我们会在虚拟机上部署 web 服务、数据库服务等，希望局域网内其他人也能够一起访问，但是虚拟机使用了 NAT，处于一个更小的局域网，宿主机所在局域网主机访问不到。
