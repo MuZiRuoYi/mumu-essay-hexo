@@ -1,8 +1,8 @@
 ---
-title: CentOS（4） — Apache安装与配置
+title: Apache 安装与配置
 date: 2019-04-27 20:33:40
 tags: [Linux, CentOS]
-category: 'CentOS'
+category: 'linux'
 ---
 
 Linux 服务器最常用的 Web 服务 APP 为 Apache 和 nginx，此处讲述 Apache（在部署 WordPress 时候遇到，开始首次正式使用 Apache，所以文中牵扯到都是本人部署所需要的配置记录）。
@@ -82,3 +82,19 @@ NameVirtualHost *:82
   </IfModule>
 </VirtualHost>
 ```
+
+### 斜杠问题
+
+默认情况下，网页目录的最后必须加入斜杠`/`，但是平时开发很少会主动添加上这一个斜杠，例如：
+
+可以浏览`http://www.example.com/abc/`，但是不能浏览`http://www.example.com/abc`，就是说浏览目录时最后必须加`/`。当碰到`abc`时候，会默认查找`abc`文件，而不是当做目录去查找。
+
+#### 解决
+
+在`httpd.conf`里，将
+
+    UseCanonicalName On
+
+把`On`修改为`Off`就可:
+
+    UseCanonicalName Off

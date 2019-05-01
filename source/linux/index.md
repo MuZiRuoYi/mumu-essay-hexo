@@ -17,7 +17,8 @@ comments: false
 
 作为一名前端开发，对于服务器部署往往缺乏一些经验，查看许多教程进行尝试后总结的一套服务我自己当时需要的一套配置过程，中间可能会存在一些不专业或非最优的理解。以下是本人在工作、学习中服务器部署经验性质备忘录。
 
-1. [CentOS（1） — 虚拟机安装](/linux/centos/01_vm-install/)
-2. [CentOS（2） — 宿主机所在局域网访问虚拟机端口/服务](/linux/centos/02_vm-host-config/)
-3. [CentOS（3） — PHP7.x 安装与配置](/linux/centos/04_php7.x/)
-4. [CentOS（4） — Apache 安装与配置](/linux/centos/03_apache/)
+1. [虚拟机安装](/linux/centos/01_vm-install/)
+2. [宿主机所在局域网访问虚拟机端口/服务](/linux/centos/02_vm-host-config/)
+3. [PHP7.x 安装与配置](/linux/centos/03_php7.x/)
+4. [Apache 安装与配置](/linux/centos/04_apache/)
+5. [nodejs 自启动](/code/frontend/nodejs-autostart/)

@@ -1,7 +1,7 @@
 ---
-title: 前端杂项笔记 - setTimeout
+title: setTimeout
 date: 2018-08-12 12:33:12
-tags: [Frontend]
+tags: [FrontEnd]
 category: 'code'
 ---
 

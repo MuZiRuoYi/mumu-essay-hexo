@@ -17,9 +17,9 @@ menu:
   tags:
     text: 标签
     url: /tags
-  th-list:
-    text: 分类
-    url: /categories
+  # th-list:
+  #   text: 分类
+  #   url: /categories
   reasonml:
     text: ReasonML
     url: /reasonml
