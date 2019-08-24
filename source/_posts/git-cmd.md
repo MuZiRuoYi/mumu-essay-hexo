@@ -4,6 +4,10 @@ date: 2018-03-30 13:19:50
 tags: [git, cmd]
 ---
 
+### 生成 ssh 公钥
+
+    $: ssh-keygen
+
 #### commit
 
     $: git add .  // 将所有改动加入缓存区
@@ -110,3 +114,5 @@ git 操作中，一般使用的`git push origin <branch>`中的`origin`实际上
     $: git remote --help  // 查看remote帮助，还有其他有趣命令
 
 [子模块](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)
+
+### git hook

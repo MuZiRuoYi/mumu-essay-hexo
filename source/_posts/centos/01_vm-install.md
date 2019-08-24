@@ -48,7 +48,7 @@ DNS2=202.103.24.68
 
 如果使用 VMware 需要注意其中的网关设置，可能并非常见的“192.168.\*.1”，我之前一度配置错误，知道后来才注意到：VMware –> 编辑 -> 虚拟网络编辑器 -> 选择 NAT 一行 -> 点击 NAT 设置（如果遇到不能编辑情况，是因为需要管理权限，可以在其右下角找到按钮获取权限），这里可以看到需要的网关。
 
-![VMware 虚拟网络编辑器](/assets/articles/img/vmware-gateway.png 'WMware 网关')
+![VMware 虚拟网络编辑器](/img/vmware-gateway.png 'WMware 网关')
 
 2. **测试网络**
 
@@ -101,7 +101,7 @@ $ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Cento
 临时关闭防火墙：
 
 ```shell
-$ servcie iptables stop
+$ service iptables stop
 ```
 
 永久关闭防火墙：
@@ -112,4 +112,4 @@ $ chkconfig iptables off
 
 #### 局域网访问
 
-虚拟机使用了 NAT，处于一个更小的局域网，宿主机所在局域网主机访问不到其上端口或服务，但是可能会需要与其他人共享，此时需要对[宿主机进行设置](/linux/centos/centos-vm-install/)
+虚拟机使用了 NAT，处于一个更小的局域网，宿主机所在局域网主机访问不到其上端口或服务，但是可能会需要与其他人共享，此时需要对[宿主机进行设置](/linux/centos/02_vm-host-config/)
